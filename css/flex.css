@@ -1,0 +1,34 @@
+.flex-c{
+    display: flex;
+}
+.flex-c-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-c-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.flex-j-between{
+    justify-content: space-between;
+}
+.flex-j-around{
+    justify-content: space-around;
+}
+.flex-j-end{
+    justify-content: flex-end;
+}
+.align-items{
+    align-items: center;
+}
+.align-self{
+    align-self: center;
+}
+

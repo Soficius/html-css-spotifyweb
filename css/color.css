@@ -1,0 +1,24 @@
+:root{
+    --black: #000000;
+    --dark-purple: rgba(8, 11, 18, 0.6);
+    --light-purple: #141922;
+    --grey: #474747;
+}
+.bg-dark-purple{
+    background-color: var(--dark-purple);
+}
+.bg-light-purple{
+    background-color: var(--light-purple);
+}
+.bg-grey{
+    background-color: var(--grey);
+}
+.bg-black{
+    background-color: var(--black);
+}
+.txt-white{
+    color: white;
+}
+.txt-black{
+    color: black;
+}

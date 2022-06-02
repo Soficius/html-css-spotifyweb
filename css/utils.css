@@ -1,0 +1,28 @@
+.overflow-auto{
+    overflow:auto;
+}
+.border{
+    border: 4px solid rgb(23, 214, 17);
+}
+.height-big{
+    height: 100%;
+}
+.height-small{
+    height: 60px;
+    width: 100%;
+}
+.height-medium{
+    height: 30%;
+}
+.m-r{
+    margin-right: 2em;
+}
+.m-l{
+    margin-left: 2em;
+}
+.m-t{
+    margin-top: 2em
+}
+.m-b{
+    margin-bottom: 2em;
+}
