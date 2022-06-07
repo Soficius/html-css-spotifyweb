@@ -14,7 +14,12 @@
     --sidebar-width: 12em;
     --footer-height: 5em;
 }
-
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
 /* header */
 nav{
     position: fixed;
@@ -24,6 +29,22 @@ nav{
     height: var(--nav-height);
     justify-content: center;
     z-index: 1;
+
+}
+button{
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+    margin: 5px 10px;
+    align-self: center;
+    padding: 8px 40px;
+    background-color: var(--dark-purple);
+}
+#internav, a{
+   margin-right: 1em ;
+   color: var(--lightgrey);
+   font-weight: bolder;
+   font-size: smaller ;
 }
 
 #sidebar{
@@ -32,30 +53,57 @@ nav{
     left: 0;
     bottom: var(--footer-height);
     width: var(--sidebar-width);
+    color: var(--grey);
+    overflow-y: auto;
 }
+.small-photo{
+    height: 28px ;
+}
+.side-row{
+margin-top: 10px;
+align-items: center;
+}
+.side-row>*{
+    margin-left: 10px;
+}
+
+ul li{
+    margin-top: 15px;
+    margin-left: 0.5em;
+     list-style: none;
+     color: var(--grey)
+}
+
 /* main */
 main{
     position: fixed;
-    top: 0; 
-    padding-top: var(--nav-height);
+    top: 0;
+    padding-top: calc( var(--nav-height) + 1em );
     left: var(--sidebar-width);
     right: 0;
     bottom: var(--footer-height);
+    padding-right: 1em;
+    padding-left: 1em;
 }
-img{
-    height: 100px;
-    width: 100px;
+#recently, #forme, #popular{
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
+
 .played{
-    border: 4px dashed red;
+    max-width: 200px;
+}
+.played, .played img{
+   width: 100%;
 }
 
 #recently>*,#forme>*,#popular>*{
     margin-right: 1em;
     margin-bottom: 1em;
 }
-#forme{}
-#popular{}
+.rounded img{
+    border-radius: 200px;
+}
 
 footer{
     position: fixed;
@@ -63,4 +111,12 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+}
+.barra{
+    width: 400px;
+    height: 10px;
+    border: 5px solid #666;
+   border-radius: 10px;
+    margin-top: 1em;
+
 }

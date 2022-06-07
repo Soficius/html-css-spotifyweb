@@ -3,6 +3,7 @@
     --dark-purple: rgba(8, 11, 18, 0.6);
     --light-purple: #141922;
     --grey: #474747;
+    --lightgrey: #7c7e83;
 }
 .bg-dark-purple{
     background-color: var(--dark-purple);
