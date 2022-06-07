@@ -1,8 +1,10 @@
+
 @media (max-width: 992px){
     :root{
         --nav-height: 4em;
         --footer-height: 5em;
     }
+  
 }
 @media (max-width: 768px){
     :root{
@@ -13,8 +15,10 @@
         flex-wrap: wrap;
     }
     .played{
-        width: 45%;
+        width:20%;
     }
+
+ 
 }
 @media (max-width: 576px){
     :root{
@@ -22,4 +26,18 @@
         --sidebar-width: 3em;
         --footer-height: 5em;
     }
+    .logo{
+        display: none;
+    }
+    ul{
+        display: none;
+    }
+    .small-logo{
+      display: block; 
+    }
+    .played{
+        width: 45%;
+    }
+
+
 }

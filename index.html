@@ -15,7 +15,9 @@
         <title>Spotify</title>
     </head>
     <body>
+        <!-- header -->
         <header>
+            <!-- nav button -->
             <nav class="
                 bg-dark-purple
                 txt-white 
@@ -24,110 +26,150 @@
             ">
                 <button class="m-r">Effettua l'upgrade</button>
             </nav>
+            <!-- sidebar -->
             <div id="sidebar" class="
                 bg-black 
                 txt-white 
                 flex-c-col
             ">
-           <img src="img/logo.svg" alt="">
-                <div class="flex-c-row side-row">
-                    <img src="img/home.svg" alt="home" class="small-photo">
-                    <a>Home</a>
+                <div class="flex-c-col" id="sidebar-top">
+                    <!-- content sidebar -->
+                    <img src="img/logo.svg" alt="" class="logo">
+                    <img src="img/logo-small.svg" alt="" class="small-logo small-photo">
+                    <div class="flex-c-row side-row">
+                        <img src="img/home.svg" alt="home" class="small-photo">
+                        <a>Home</a>
+                    </div>
+                    <div class="flex-c-row side-row">
+                        <img src="img/search.svg" alt="search" class="small-photo">
+                        <a>Cerca</a>
+                    </div>
+                    <div class="flex-c-row side-row">
+                        <img src="img/libreria.svg" alt="libreria" class="small-photo">
+                        <a>La tua libreria</a>
+                    </div>
+                   
+                    <ul class="overflow-auto">
+                        <li><i class="fa-solid fa-plus"></i> Crea Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
                 </div>
-                <div class="flex-c-row side-row">
-                    <img src="img/search.svg" alt="search" class="small-photo">
-                    <a>Cerca</a>
+
+                <div class="flex-c-column" id="sidebar-bottom">
+                        <img src="img/download.svg small-photo" alt="">
+                        <h5>Installa app</h5>
+                    <hr>
+                        <img src="img/profile.svg small-photo" alt="">
+                        <h4>John Doe</h4>
                 </div>
-                <div class="flex-c-row side-row">
-                    <img src="img/libreria.svg" alt="libreria" class="small-photo">
-                    <a>La tua libreria</a>
-                </div>
-               
-                <ul class="overflow-auto">
-                    <li><i class="fa-solid fa-plus"></i> Crea Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                </ul>
             
             </div>
         </header>
+    <!-- main -->
         <main class="
             bg-light-purple 
             txt-white 
             flex-c-col
             overflow-auto
         ">
+        <!-- internav -->
             <div id="internav" class="flex-c-row flex-wrap flex-center">
-                <a>IN EVIDENZA</a>
+                <a>IN EVIDENZA <hr></a>
                 <a>PODCAST</a>
                 <a>CLASSIFICHE</a>
                 <a>GENERI E MONDO</a>
                 <a>NUOVE USCITE</a>
                 <a>SCOPRI</a>
             </div>
+            <!-- recently played -->
             <h2>Recently played</h2>
             <div class="flex-c-row m-l m-t" id="recently">
                 <div class="flex-c-column played">
-                    <img src="img/metal_lifting.jpg" alt="">
+                    <figure>
+                        <img src="img/metal_lifting.jpg" alt="">
+                    </figure>
                     <h4>Heavy Metal</h4>
                     <h5>Subtitle</h5>
                 </div>
-                    <div class="flex-c-column played">
-                    <img src="img/stranger.jpeg" alt="">
+                <div class="flex-c-column played">
+                    <figure>
+                        <img src="img/stranger.jpeg" alt="">
+                    </figure>
                     <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
                     <h5>Kyle Dixon & Michael Stein</h5>
                 </div>
                 <div class="flex-c-column played">
-                    <img src="img/aquietplace.jpeg" alt="">
+                    <figure>
+                         <img src="img/aquietplace.jpeg" alt="">
+                    </figure>
                     <h4>A Quiet Place</h4>
                     <h5> Subtitle </h5>
                 </div>
                 <div class="flex-c-column played">
-                    <img src="img/split.jpeg" alt="">
+                    <figure>
+                        <img src="img/split.jpeg" alt="">
+                 </figure>
                     <h4>Split</h4>
                     <h5> Subtitle </h5>
                 </div>
                 <div class="flex-c-column played">
-                    <img src="img/cure.jpeg" alt="">
+                    <figure>
+                        <img src="img/cure.jpeg" alt="">
+                    </figure>
                     <h4>A cure for wellness</h4>
                     <h5> Subtitle </h5>
                 </div>
                 <div class="flex-c-column played">
+                    <figure>
                     <img src="img/sinister.jpeg" alt="">
+                    </figure>
                     <h4>Sinister</h4>
                     <h5> subtitle </h5>
                 </div>
             </div>
+            <!-- john doe playlist -->
             <h2>Creato per John Doe</h2>
             <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
             <div class="flex-c-row m-l m-t" id="forme">
                 <div class="flex-c-column played">
-                    <img src="img/radar.jpeg" alt="">
+                    <figure>
+                         <img src="img/radar.jpeg" alt="">
+                     </figure>
                     <h4>Release Radar</h4>
                 </div>
                 <div class="flex-c-column played ">
-                    <img src="img/mixdaily.jpeg" alt="">
+                    <figure>
+                        <img src="img/mixdaily.jpeg" alt="">
+                    </figure>
                     <h4>Dialy Mix 1</h4>
                 </div>
             </div>
+            <!-- popular artist -->
             <h2>Artisti più popolari</h2>
             <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
             <div class="flex-c-row m-l m-t" id="popular">
                 <div class="flex-c-column played rounded">
-                    <img src="img/youg.jpeg" alt="">
+                    <figure>
+                        <img src="img/youg.jpeg" alt="">
+                    </figure>
                 </div>
                 <div class="flex-c-column played rounded ">
-                    <img src="img/einaudi.jpeg" alt="">
+                    <figure>
+                        <img src="img/einaudi.jpeg" alt="">
+                    </figure>
                 </div>
 
             </div>
         </div>
     </main>
+    <!-- footer -->
         <footer class="bg-grey txt-white flex-c-row flex-j-between">
-        <div class="flex-c-row border flex-center border">
+        <div class="flex-c-row flex-center">
+            <!-- right container -->
             <figure>
                 <img src="img/sinister.jpeg" alt="" class="small-photo m-r m-l">
             </figure>
@@ -140,26 +182,27 @@
                 <i class="fa-regular fa-folder"></i>
             </div>
         </div>
-        <div class="flex-c-col border flex-center">
-            <div class="flex-c-row">
-                <i class="fa-solid fa-shuffle m-r"></i>
+        <!-- middle container -->
+        <div class="flex-c-col flex-center">
+            <div class="flex-c-row play-icons">
+                <i class="fa-solid fa-shuffle m-r fa-2s"></i>
                 <i class="fa-solid fa-backward-step m-r"></i>
                 <i class="fa-solid fa-circle-play m-r"></i>
                 <i class="fa-solid fa-forward-step m-r"></i>
                 <i class="fa-solid fa-arrow-rotate-right m-r"></i>
             </div>
-            <div class="flex-c-row">
+            <div class="flex-c-row align-items">
+                <span class="minute">0:25</span>
                 <span class="barra"></span>
+                <span class="minute">4:35</span>
             </div>
         </div>
-        <div class="border">
-            <i class="fa-solid fa-list m-r"></i>
+        <!-- left-container -->
+        <div class="flex-c-row align-items m-r">
+            <i class="fa-solid fa-list m-r "></i>
             <i class="fa-solid fa-tv m-r"></i>
             <i class="fa-solid fa-volume-high m-r"></i>
-
-
-            <i>c</i>
-            <i>d</i>
+            <span class="small-barra"></span>
         </div>
         
 

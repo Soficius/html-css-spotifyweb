@@ -12,6 +12,7 @@
 :root{
     --nav-height: 4em;
     --sidebar-width: 12em;
+    --sidebar-bottom-height: 5em;
     --footer-height: 5em;
 }
 body{
@@ -21,6 +22,7 @@ a{
     text-decoration: none;
 }
 /* header */
+/* nav button */
 nav{
     position: fixed;
     top: 0;
@@ -40,6 +42,7 @@ button{
     padding: 8px 40px;
     background-color: var(--dark-purple);
 }
+/* internav */
 #internav, a{
    margin-right: 1em ;
    color: var(--lightgrey);
@@ -47,6 +50,7 @@ button{
    font-size: smaller ;
 }
 
+/* sidebar */
 #sidebar{
     position: fixed;
     top:0;
@@ -54,10 +58,39 @@ button{
     bottom: var(--footer-height);
     width: var(--sidebar-width);
     color: var(--grey);
-    overflow-y: auto;
 }
+#sidebar-bottom hr{
+   width: 150px;
+}
+#sidebar-top{
+    height: calc(100% - var(--sidebar-bottom-height));
+}
+#sidebar-bottom{
+    height: var(--sidebar-bottom-height);
+}
+/* first container */
+.logo{
+    height: 40px;
+    margin-left: 0.5em;
+    margin-top: 1em;
+    width: max-content;
+}
+.small-logo{
+    display:none;
+    margin-top: 1em;
+}
+
 .small-photo{
     height: 28px ;
+}
+.fa-solid.fa-plus{
+    width: 2em;
+    height: 2em;
+    background-color: #666;
+    color: #000;
+    text-align: center;
+    line-height: 2em;
+   
 }
 .side-row{
 margin-top: 10px;
@@ -66,13 +99,14 @@ align-items: center;
 .side-row>*{
     margin-left: 10px;
 }
-
+/* second container */
 ul li{
     margin-top: 15px;
     margin-left: 0.5em;
      list-style: none;
      color: var(--grey)
 }
+/* third container */
 
 /* main */
 main{
@@ -85,6 +119,7 @@ main{
     padding-right: 1em;
     padding-left: 1em;
 }
+/* music squares */
 #recently, #forme, #popular{
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -96,6 +131,15 @@ main{
 .played, .played img{
    width: 100%;
 }
+.played>*{
+    text-align: center;
+    margin-top: 10px;
+}
+h5{
+    font-size:15px;
+    color:var(--grey);
+    font-weight: bolder;
+}
 
 #recently>*,#forme>*,#popular>*{
     margin-right: 1em;
@@ -104,7 +148,7 @@ main{
 .rounded img{
     border-radius: 200px;
 }
-
+/* footer */
 footer{
     position: fixed;
     height: var(--footer-height);
@@ -116,7 +160,63 @@ footer{
     width: 400px;
     height: 10px;
     border: 5px solid #666;
-   border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.minute{
+    margin-right:5px;
+    margin-left: 5px;
     margin-top: 1em;
 
 }
+.small-barra{
+    width: 100px;
+    border: 5px solid #666;
+    height: 5px;
+    border-radius: 10px;
+}
+/* effects */
+.played {
+    transition: transform 0.5s ;
+}
+.played:hover{
+    transform:translateY(-10px)scale(1.05) ;
+}
+.played:hover figure{
+    position: relative;
+}
+.played:hover figure::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.played:hover figure::after{
+    content: '\f144';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 3em;
+    font-family:'font awesome 5 free';
+    font-weight: 500;
+}
+button:hover{
+    font-size:1em
+}
+#internav a:hover{
+    color: white;
+}
+ul li:hover{
+    color:white
+}
+#sidebar-top a:hover{
+    color:white
+}
+
+
